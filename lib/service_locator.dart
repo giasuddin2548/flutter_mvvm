@@ -12,23 +12,13 @@ final sl = GetIt.instance;
 
 class ServiceLocator {
   static Future<void> init() async {
-    /// Core
     final dio = Dio(BaseOptions(baseUrl: "https://jsonplaceholder.typicode.com"));
     dio.interceptors.add(DioInterceptor());
-
     sl.registerSingleton<Dio>(dio);
     sl.registerSingleton<ApiClient>(ApiClient(sl()));
-
-    /// Data Sources
     sl.registerLazySingleton<RemoteDataSource>(() => RemoteDataSource(sl()));
-
-    /// Repository (abstract => implementation)
     sl.registerLazySingleton<ApiRepository>(() => ApiRepoImpl(sl()));
-
-    /// Use Cases
     sl.registerLazySingleton<ApiUseCase>(() => ApiUseCase(sl()));
-
-    /// Bloc
     sl.registerFactory<HomeBloc>(() => HomeBloc(sl()));
   }
 }
