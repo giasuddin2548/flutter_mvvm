@@ -1,5 +1,7 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter_mvvm/domain/entities/post.dart';
+
+import '../../../domain/entities/post.dart';
+
 
 abstract class HomeState extends Equatable{
 

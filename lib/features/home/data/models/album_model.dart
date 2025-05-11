@@ -1,4 +1,6 @@
-import 'package:flutter_mvvm/domain/entities/albums.dart';
+
+
+import '../../domain/entities/albums.dart';
 
 class AlbumModel extends Album {
   AlbumModel({required super.id, required super.title});

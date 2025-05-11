@@ -1,8 +1,9 @@
-import 'package:flutter_mvvm/core/api_client.dart';
-import 'package:flutter_mvvm/data/models/album_model.dart';
-import 'package:flutter_mvvm/data/models/photo_model.dart';
-import 'package:flutter_mvvm/data/models/post_model.dart';
 
+
+import 'api_client.dart';
+import '../../models/album_model.dart';
+import '../../models/photo_model.dart';
+import '../../models/post_model.dart';
 
 class RemoteDataSource {
   final ApiClient client;

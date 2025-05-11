@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_mvvm/presentation/blocs/home_bloc/home_bloc.dart';
-import 'package:flutter_mvvm/presentation/blocs/home_bloc/home_event.dart';
-import 'package:flutter_mvvm/presentation/blocs/home_bloc/home_state.dart';
+import '../blocs/home_bloc/home_bloc.dart';
+import '../blocs/home_bloc/home_event.dart';
+import '../blocs/home_bloc/home_state.dart';
 
 class HomeBodyWidget extends StatefulWidget {
   const HomeBodyWidget({super.key});

@@ -1,12 +1,12 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_mvvm/core/my_dio_interceptor.dart';
+import 'package:flutter_mvvm/features/home/data/data_sources/remote/my_dio_interceptor.dart';
 import 'package:get_it/get_it.dart';
-import 'package:flutter_mvvm/core/api_client.dart';
-import 'package:flutter_mvvm/data/data_sources/remote/remote_data_source.dart';
-import 'package:flutter_mvvm/data/repositories/api_repo_impl.dart';
-import 'package:flutter_mvvm/domain/repositories/api_repository.dart';
-import 'package:flutter_mvvm/domain/use_cases/api_usecase.dart';
-import 'package:flutter_mvvm/presentation/blocs/home_bloc/home_bloc.dart';
+import '../../features/home/data/data_sources/remote/remote_data_source.dart';
+import '../../features/home/data/repositories/api_repo_impl.dart';
+import '../../features/home/domain/repositories/api_repository.dart';
+import '../../features/home/domain/use_cases/api_usecase.dart';
+import '../../features/home/presentation/blocs/home_bloc/home_bloc.dart';
+import '../../features/home/data/data_sources/remote/api_client.dart';
 
 final sl = GetIt.instance;
 

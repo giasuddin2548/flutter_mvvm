@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_mvvm/domain/use_cases/api_usecase.dart';
-import 'package:flutter_mvvm/presentation/blocs/home_bloc/home_event.dart';
-import 'package:flutter_mvvm/presentation/blocs/home_bloc/home_state.dart';
+import '../../../domain/use_cases/api_usecase.dart';
+import 'home_event.dart';
+import 'home_state.dart';
 
 
 class HomeBloc extends Bloc<HomeEvent, HomeState>{
